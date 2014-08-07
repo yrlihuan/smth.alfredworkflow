@@ -1,1 +1,3 @@
-smth.pyc
+*.pyc
+*.swp
+

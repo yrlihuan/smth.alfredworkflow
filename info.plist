@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.bayesiantech</string>
+	<key>connections</key>
+	<dict>
+		<key>84041776-56F9-47E9-AD3C-642393B290F0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F7C6909B-F98E-44AD-84DD-3AAE65B26016</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A9F00909-D103-47EF-8619-73EB846506CA</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Open in Firefox</string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>yrlihuan</string>
+	<key>description</key>
+	<string>top posts from newsmth bbs</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>水木社区</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>F7C6909B-F98E-44AD-84DD-3AAE65B26016</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>8</integer>
+				<key>keyword</key>
+				<string>smth</string>
+				<key>runningsubtext</key>
+				<string>updating stories...</string>
+				<key>script</key>
+				<string>import smth
+
+smth.run('{query}')</string>
+				<key>subtext</key>
+				<string>or start typing board name</string>
+				<key>title</key>
+				<string>today's top 10 stories</string>
+				<key>type</key>
+				<integer>3</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>84041776-56F9-47E9-AD3C-642393B290F0</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string>org.mozilla.firefox</string>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>A9F00909-D103-47EF-8619-73EB846506CA</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>84041776-56F9-47E9-AD3C-642393B290F0</key>
+		<dict>
+			<key>ypos</key>
+			<real>80</real>
+		</dict>
+		<key>A9F00909-D103-47EF-8619-73EB846506CA</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>F7C6909B-F98E-44AD-84DD-3AAE65B26016</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://github.com/yrlihuan/smth.alfredworkflow</string>
+</dict>
+</plist>
