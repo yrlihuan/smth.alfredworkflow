@@ -24,7 +24,7 @@ def safe_get_time(elem):
     except:
       return ''
 
-    dt = time.time() - t
+    dt = time.time() - t - 3600 * 8.0
     if dt > 3600 * 24 * 2:
       return u'%.0f 天前' % (dt / 3600.0 / 24.0)
     elif dt > 3600 * 24:
